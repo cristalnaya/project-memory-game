@@ -151,3 +151,19 @@ function newRaiting() {
 	document.querySelector(".stars li:nth-child(2)").classList.remove("star-empty");
 }
 
+//create stopwatch that counts minutes and seconds until winning the game
+function setTime() {
+	timer = setInterval(function() {
+		seconds.innerText++;
+		if(seconds.innerText == 60) {
+			minutes.innerText++;
+			seconds.innerText = 0;
+			
+		}
+	},(1000));
+	return timer;
+}
+
+function stopTime() {
+	clearInterval(timer);
+}
