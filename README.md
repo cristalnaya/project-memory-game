@@ -1,9 +1,7 @@
 # Memory Game Project
 
-## Table of Contents
+This is a project at Udacity FEND Program. And I had to create Matching Game.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
 
 ## Instructions to Play:
 
@@ -12,12 +10,6 @@ This is a game where you need to match pairs of cards.
 * When the game finishes you'll see the winning message on the screen. 
 * From that message you' ll be seeing your score, moves and time it took to complete the game. 
 * Then on that screen, you can click on the repeat icon button to play again.
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Installation
 
@@ -31,3 +23,11 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 *  Background image is from Pixabay
 
 * For the icons I used Font Awesome from https://fontawesome.com
+
+## Known Bugs:
+
+If you click on an already open card it will be count as a matched card. 
+
+## Author
+
+Front-End Princess: Radostina Dimitrova
