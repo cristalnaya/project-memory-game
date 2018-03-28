@@ -23,3 +23,11 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
 1. Clone this repository: https://github.com/cristalnaya/project-memory-game
 2. Then just open index.html in browser and play 🎮.
+
+## Tools used: 
+
+*  Udacity starter code: https://github.com/udacity/fend-project-memory-game
+
+*  Background image is from Pixabay
+
+* For the icons I used Font Awesome from https://fontawesome.com
