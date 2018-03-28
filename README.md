@@ -5,13 +5,13 @@
 * [Instructions](#instructions)
 * [Contributing](#contributing)
 
-## Instructions
+## Instructions to Play:
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+This is a game where you need to match pairs of cards. 
+* Start the game by click to open two cards, if they match, try to find another pair of cards until finding all card pairs. 
+* When the game finishes you'll see the winning message on the screen. 
+* From that message you' ll be seeing your score, moves and time it took to complete the game. 
+* Then on that screen, you can click on the repeat icon button to play again.
 
 ## Contributing
 
