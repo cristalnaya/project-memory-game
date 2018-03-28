@@ -59,6 +59,29 @@ function shuffle(array) {
     return array;
 }
 
+//open card and display it's symbol
+function openCard(event) {
+	if(resetTimer === 0) {
+		setTime();
+		resetTimer = 1;
+	}
+	if (matchCards.length > 1) {
+		return;
+	}
+
+if (event.target.tagName === 'LI') {
+	turnCard(event);
+	matchCards.push(event.target);
+if(matchCards.length === 2) {
+	checkMatched();
+	countMoves();
+		}
+	}
+}
+
+
+
+
 
 // TODO: create new board with all cards, loop through each card and create its HTML
 function newBoard() {
