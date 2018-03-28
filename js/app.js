@@ -1,6 +1,22 @@
-/*
+/*All variables
  * Create a list that holds all of your cards
  */
+const cardList = ["diamond", "diamond", "paper-plane-o", "paper-plane-o", "anchor", "anchor", "bolt", "bolt", "cube", "cube", "leaf", "leaf", "bicycle", "bicycle", "bomb", "bomb"];
+const deckOfCards = document.querySelector('.deck');
+const restart = document.querySelector('.restart');
+//Popup message
+const modal = document.querySelector('.modal');
+const stars = document.querySelector('.stars');
+const moves = document.querySelector('.moves');
+const moveCounter = document.querySelector('.move-count');
+const time = document.querySelector('.time');
+let minutes = document.querySelector('.minutes');
+let seconds = document.querySelector('.seconds');
+let timer;
+let resetTimer = 0;
+//TODO: stores matched cards
+let matchCards = [];
+let finishGame = 0;
 
 
 /*
