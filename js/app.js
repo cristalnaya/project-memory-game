@@ -19,12 +19,15 @@ let matchCards = [];
 let finishGame = 0;
 
 
-/*
- * Display the cards on the page
- *   - shuffle the list of cards using the provided "shuffle" method below
- *   - loop through each card and create its HTML
- *   - add each card's HTML to the page
- */
+/* set up the event listener for a card. If a card is clicked:
+* - display the card's symbol
+*/
+restart.addEventListener("click", addBoard); 
+deckOfCards.addEventListener("click", openCard);
+shuffle(cardList);
+newBoard();
+
+
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
