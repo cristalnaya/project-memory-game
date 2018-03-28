@@ -84,7 +84,19 @@ function turnCard(event) {
 	event.target.classList.add('show');
 }
 
+//check if cards are matched
+function checkMatched() {
 
+	if (matchCards[0].classList.value === matchCards[1].classList.value) {
+		setTimeout(function() {
+			matched();
+			matchCards = [];
+		}, (500));
+	
+} else {
+	notMatched();
+	}
+}
 
 
 // TODO: create new board with all cards, loop through each card and create its HTML
