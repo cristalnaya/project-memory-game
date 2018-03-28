@@ -1,6 +1,6 @@
 # Memory Game Project
 
-This is a project at Udacity FEND Program. And I had to create Matching Game.
+This is a project at Udacity FEND Program. Where I had to create Matching Game.
 
 
 ## Instructions to Play:
