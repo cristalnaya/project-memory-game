@@ -167,3 +167,24 @@ function setTime() {
 function stopTime() {
 	clearInterval(timer);
 }
+
+//TODO: shows and hide popup message
+function modalMessage() {
+	const winMessage = document.querySelector(".modal-message");
+	modal.style.display = "block";
+	winMessage.appendChild(restart);
+	winMessage.appendChild(stars);
+	winMessage.appendChild(time);
+	winMessage.appendChild(moveCounter);
+}
+
+
+ function resetModal() {
+ 	const panel = document.querySelector(".score-panel");
+ 	modal.style.display = "none";
+	restart.appendChild(time);
+	panel.prepend(stars);
+	panel.appendChild(time);
+	panel.appendChild(moveCounter);
+	panel.appendChild(restart);
+ }
