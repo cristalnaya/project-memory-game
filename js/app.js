@@ -98,6 +98,32 @@ function checkMatched() {
 	}
 }
 
+//if the player make, less than 15 moves, will receive a full-star rating
+function countMoves() {
+	moves.innerText++;
+
+	if (moves.innerText > 15) {
+		document.querySelector('.stars li:nth-child(1)').classList.add('star-empty');
+
+	}
+	if (moves.innerText > 23) {
+		document.querySelector('.stars li:nth-child(2)').classList.add('star-empty');
+	}
+}
+
+//if cards are matches
+function matched() {
+	matchCards[0].classList.add('match');
+	matchCards[1].classList.add('match');
+	finishGame++;
+
+	if (finishGame === 8) {
+		clearInterval(timer);
+		modalMessage();
+	}
+}
+
+
 
 // TODO: create new board with all cards, loop through each card and create its HTML
 function newBoard() {
