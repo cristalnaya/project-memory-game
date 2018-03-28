@@ -79,6 +79,10 @@ if(matchCards.length === 2) {
 	}
 }
 
+function turnCard(event) {
+	event.target.classList.add('open');
+	event.target.classList.add('show');
+}
 
 
 
