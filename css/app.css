@@ -103,7 +103,6 @@ h1 {
     background-color: #fa7280;
 }
 
-
 /*
  * Styles for the Score Panel
  */
@@ -147,7 +146,6 @@ i.fa-star {
     color: #ffd700;
 }
 
-
 .restart i {
     background-color: #6fc4d3;
     color: #fff;
@@ -174,7 +172,6 @@ i.fa-star {
 .star-empty {
     opacity: 0.1;
 }
-
 
 /*modal message*/
 
