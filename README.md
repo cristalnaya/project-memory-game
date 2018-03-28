@@ -23,6 +23,7 @@ This is a game where you need to match pairs of cards.
 *  Background image is from Pixabay
 
 * For the icons I used Font Awesome from https://fontawesome.com
+* From Google Fonts are used "Bangers" and "Coda"
 
 ## Known Bugs:
 
