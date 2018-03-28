@@ -27,6 +27,21 @@ deckOfCards.addEventListener("click", openCard);
 shuffle(cardList);
 newBoard();
 
+//start the game
+function addBoard() {
+	deckOfCards.innerHTML = "";
+	shuffle(cardList);
+	newBoard();
+	matchTwoCards = [];
+	finishGame = 0;
+	moves.innerText = 0;
+	resetTimer = 0;
+	seconds.innerText = 0;
+	minutes.innerText = 0;
+	stopTime();
+	newRaiting();
+	resetModal();
+}
 
 
 // Shuffle function from http://stackoverflow.com/a/2450976
