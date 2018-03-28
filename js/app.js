@@ -123,6 +123,16 @@ function matched() {
 	}
 }
 
+//cards not matched
+function notMatched() {
+	matchCards[0].classList.add('no-match');
+	matchCards[1].classList.add('no-match');
+	setTimeout(function() {
+		matchCards[0].classList.remove('open', 'show', 'no-match');
+		matchCards[1].classList.remove('open', 'show', 'no-match');
+		matchCards = [];
+	}, (1000));
+}
 
 
 // TODO: create new board with all cards, loop through each card and create its HTML
@@ -133,5 +143,11 @@ function newBoard() {
 		newList.setAttribute('class', 'card fa fa-' + cardList[i]);
 		deckOfCards.appendChild(newList);
 	}
+}
+
+//reset raiting
+function newRaiting() {
+	document.querySelector(".stars li:nth-child(1)").classList.remove("star-empty");
+	document.querySelector(".stars li:nth-child(2)").classList.remove("star-empty");
 }
 
