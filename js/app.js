@@ -22,7 +22,7 @@ let finishGame = 0;
 /* set up the event listener for a card. If a card is clicked:
 * - display the card's symbol
 */
-restart.addEventListener("click", addBoard); 
+restart.addEventListener("click", addBoard);
 deckOfCards.addEventListener("click", openCard);
 shuffle(cardList);
 newBoard();
@@ -92,7 +92,7 @@ function checkMatched() {
 			matched();
 			matchCards = [];
 		}, (500));
-	
+
 } else {
 	notMatched();
 	}
@@ -158,7 +158,7 @@ function setTime() {
 		if(seconds.innerText == 60) {
 			minutes.innerText++;
 			seconds.innerText = 0;
-			
+
 		}
 	},(1000));
 	return timer;
