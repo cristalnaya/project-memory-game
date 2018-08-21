@@ -1,40 +1,32 @@
 /*All variables
  * Create a list that holds all of your cards
  */
+ const cardList = ["diamond", "diamond", "paper-plane-o", "paper-plane-o", "anchor", "anchor", "bolt", "bolt", "cube", "cube", "leaf", "leaf", "bicycle", "bicycle", "bomb", "bomb"];
 const deckOfCards = document.querySelector('.deck');
-
+const restart = document.querySelector('.restart');
 //Popup message
 const modal = document.querySelector('.modal');
-let modalBody = document.getElementsByClassName('modal-body')[0];
-let newGame = document.getElementById('restart');
-let close = document.getElementById('close');
 
 const stars = document.querySelector('.stars');
 const moves = document.querySelector('.moves');
-let card = document.getElementsByClassName('card');
-let cards = [...card];
-
-let seconds = 1,
-    minutes = 0,
-    time = 0;
-let clicks = 0;
+const moveCounter = document.querySelector('.move-count');	let card = document.getElementsByClassName('card');
+const time = document.querySelector('.time');
+let minutes = document.querySelector('.minutes');
+let seconds = document.querySelector('.seconds');
+let timer;
+let resetTimer = 0;
 
 // stores matched cards
 let matchCards = [];
 let finishGame = 0;
-let flipCards = [];
-let noOfFlipCards = 0;
-let allFlipCards = 0;
-
-
 
 /* set up the event listener for a card. If a card is clicked:
 * - display the card's symbol
 */
-// restart.addEventListener("click", addBoard);
-// deckOfCards.addEventListener("click", openCard);
-// shuffle(cardList);
-// newBoard();
+restart.addEventListener("click", addBoard);
+deckOfCards.addEventListener("click", openCard);
+shuffle(cardList);
+newBoard();
 
 //start the game
 function addBoard() {
@@ -113,6 +105,15 @@ if(matchCards.length === 2) {
 	}
 }
 
+// @description: create new board with all cards, loop through each card and create its HTML
+function newBoard() {
+	for (let i = 0; i < cardList.length; i++) {
+		const newList = document.createElement('li');
+    newList.setAttribute('class', 'card fa fa-' + cardList[i]);
+    		deckOfCards.appendChild(newList);
+    	}
+    }
+
 function turnCard(event) {
 	event.target.classList.add('open');
 	event.target.classList.add('show');
@@ -168,9 +169,6 @@ function notMatched() {
 	}, (1000));
 }
 
-
-
-
 //reset raiting
 function newRaiting() {
 	document.querySelector(".stars li:nth-child(1)").classList.remove("star-empty");
@@ -194,7 +192,7 @@ function stopTime() {
 	clearInterval(timer);
 }
 
-// shows and hide popup message
+// @description: shows and hide popup message
 function modalMessage() {
 	const winMessage = document.querySelector(".modal-message");
 	modal.style.display = "block";
