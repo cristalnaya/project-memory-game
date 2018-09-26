@@ -25,10 +25,6 @@ This is a game where you need to match pairs of cards.
 * For the icons I used Font Awesome from https://fontawesome.com
 * From Google Fonts are used "Bangers" and "Coda"
 
-## Known Bugs:
-
-*  If you click on an already open card it will be count as a matched card.
-*  And on Microsoft Edge Browser the game didn't work properly.
 
 ## Author
 
