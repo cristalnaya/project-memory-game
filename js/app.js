@@ -9,7 +9,7 @@ const modal = document.querySelector('.modal');
 
 const stars = document.querySelector('.stars');
 const moves = document.querySelector('.moves');
-const moveCounter = document.querySelector('.move-count');	let card = document.getElementsByClassName('card');
+const moveCounter = document.querySelector('.move-count');
 const time = document.querySelector('.time');
 let minutes = document.querySelector('.minutes');
 let seconds = document.querySelector('.seconds');
@@ -60,30 +60,6 @@ function shuffle(array) {
     return array;
 }
 
-// create new board with all cards, loop through each card and create its HTML
-function newBoard() {
-	cards = shuffle(cards);
-	let length = cards.length;
-
-	for (let i = 0; i < length; i++) {
-		deck.innerHTML = "";
-		[].forEach.call(cards,
-		function(tile) {
-			deck.appendChild(tile);
-		}
- 	);
-	cards[i].setAttribute('id', `card${i}`);
-	cards[i].classList.remove('open', 'show', 'match', 'freeze');
-	}
-
-	// reset time
-	clicks = 0;
-    seconds = 0;
-    minutes = 0;
-    clearInterval(time);
-    document.getElementById('timer').innerHTML = `minutes 0 seconds 0`;
-
-}
 
 //open card and display it's symbol
 function openCard(event) {
